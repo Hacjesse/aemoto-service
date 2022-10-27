@@ -7,3 +7,6 @@ class Aluno(Pessoa):
         self.instituicaoDeEnsino = instituicaoDeEnsino
         self.curso = curso
         self.matricula = matricula
+
+    def __repr__(self):
+        return '<Nome: {}\n Nascimento: {}\n Email: {}\n Telefone: {}\n Instituição de ensino: {}\n Curso: {}\n Matrícula: {}>'.format(self.nome, self.dt_nascimento, self.email, self.telefone, self.instituicaoDeEnsino, self.curso, self.matricula)

@@ -5,4 +5,4 @@ class InstituicaoDeEnsino():
         self.nome = nome
 
     def __repr__(self):
-        return '<Adress %r>' % self.endereco
+        return '<Nome: {}\n Endereco: {}\n Telefone: {}>'.format(self.nome, self.endereco, self.telefone)

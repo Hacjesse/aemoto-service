@@ -1,7 +1,6 @@
-from helpers.database import db
 
 
-class Prefeitura(db.Model):
+class Prefeitura():
 
     def __init__(self, secretarios, email, telefone):
         self.secretarios = secretarios
@@ -9,4 +8,4 @@ class Prefeitura(db.Model):
         self.telefone = telefone
 
     def __repr__(self):
-        return '<Prefeitura %r>' % self.email
+        return '<Secretarios: {}\n Email: {}\n Telefone: {}'.format(self.secretarios, self.email, self.telefone)
