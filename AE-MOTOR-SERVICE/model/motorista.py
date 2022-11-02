@@ -1,9 +1,11 @@
 from model.funcionario import Funcionario
 
+
 class Motorista(Funcionario):
-    def __init__(self, rotas, prefeitura, cargo, nome, dt_nascimento, email, telefone):
-        super().__init__(prefeitura, cargo, nome, dt_nascimento, email, telefone)
+
+    def __init__(self, rotas, funcionario):
+        self.funcionario = funcionario
         self.rotas = rotas
 
     def __repr__(self):
-        return '<Rotas {}\n Prefeitura {}\n Cargo {}>'.format(self.rotas, self.prefeitura, self.cargo)
+        return '<Rotas: {}\n>'.format(self.rotas)

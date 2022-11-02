@@ -1,7 +1,7 @@
 from model.pessoa import Pessoa
+from helpers.database import db
 
-
-class Prefeito(Pessoa):
+class Prefeito(Pessoa, db.Model):
     def __init__(self, nome, dt_nascimento, email, telefone):
         super().__init__(nome, dt_nascimento, email, telefone)
 
